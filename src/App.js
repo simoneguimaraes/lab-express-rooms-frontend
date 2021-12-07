@@ -4,7 +4,16 @@ import axios from "axios";
 function App() {
   return (
     <div className="App">
-      <Home />
+      < />
+
+      {room.map((currentRoom) => (
+          <Home
+            
+            name={currentRoom.name}
+            description={currentRoom.description}
+            imageUrl={currentRoom.imageUrl}
+          />
+        ))}
     </div>
   );
 }
